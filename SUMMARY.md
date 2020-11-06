@@ -1,4 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
-
+* [1. 플랫폼 소개]()
+  * [1-1. DEEP:PHI 소개]()
+  * [1-2. 권장사양]()
