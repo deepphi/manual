@@ -3,4 +3,4 @@
 * [읽어보기](README.md)
 
 - [1. 플랫폼 소개]()
-  - [1-1. DEEP:PHI 소개](chapter1/platform-introduce.md)
+  - [1-1. DEEP:PHI 소개](chapter1/딥파이_소개.md)
