@@ -1,2 +1,2 @@
-# Introduction
+# 딥파이 릴리즈 노트
 
