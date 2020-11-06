@@ -1,3 +1,9 @@
+git add .
+
+git commit -a -m "Update docs"
+
+git push origin master
+
 gitbook install && gitbook build
 
 git checkout gh-pages
