@@ -18,6 +18,8 @@ print(주소록['홍길동'])
 각 모듈이 사용하는 Dictionary 오브젝트 이름은 `data`입니다. Dictionary `data`는 `image`, `label`, `prediction`의 key를 가지고 있으며 각각의 key의 value로 하위 Dictionary를 가지고 있습니다.  
 이를 구조도로 표현하면 아래와 같습니다.
 
+<br/>
+
 ### data['image']의 구조
 
 ![](manual_4-2_1.jpg)
@@ -36,6 +38,8 @@ print(주소록['홍길동'])
 | data['image']['header']['modality']          | modality of medical image                                                                                                   | CT / MRI / Xray                             |
 | data['image']['header']['pixel_value_range'] | image의 pixel값 중 최소, 최대 값의 범위                                                                                     | np.array([0, 255])                          |
 
+<br/>
+
 ### data['label']의 구조
 
 #### - data['label']['classification']의 구조
@@ -47,6 +51,8 @@ print(주소록['홍길동'])
 | data['label']['classification']['array']                | one-hot encoding 된 label array | np.array([1., 0.])     |
 | data['label']['classification']['header']['num_class']  | 전체 class 수                   | 2                      |
 | data['label']['classification']['header']['class_name'] | 각 class 명의 list              | ['normal', 'abnormal'] |
+
+<br/>
 
 #### - data['label']['segmentation']의 구조
 
@@ -69,6 +75,8 @@ print(주소록['홍길동'])
 | data['label']['segmentation']['header']['modality']          | modality of medical image                                                                                                   | CT / MRI / Xray                             |
 | data['label']['segmentation']['header']['piexl_value_range'] | image의 pixel값 중 최소, 최대 값의 범위                                                                                     | np.array([0, 255])                          |
 
+<br/>
+
 #### - data['label']['detection']의 구조
 
 ![](manual_4-2_2_3.jpg)
@@ -79,6 +87,8 @@ print(주소록['홍길동'])
 | data['label']['detection']['bbox_class']          | 각 box의 class에 대한 one-hot encoding 된 numpy array | np.array([1.,0.,0.,0.,0.], [0.,0.,1.,0.,0.])               |
 | data['label']['detection']['header']['classes']   | 각 class에 대한 index 및 이름                         | {'dog': 0, 'cat':1, 'person' : 2, 'bird' : 3, 'boat' : 4)} |
 | data['label']['detection']['header']['num_class'] | 전체 class 수                                         | 4                                                          |
+
+<br/>
 
 #### - data['prediction']의 구조
 
