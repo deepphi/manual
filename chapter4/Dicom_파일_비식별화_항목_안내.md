@@ -1,1 +1,50 @@
-# Dicom 파일 비식별화 항목
+# 4. 부록
+
+***
+
+## 4-3. Dicom 파일 비 식별화 항목 안내
+
+
+| Dicom Tag Key |            Tag Explanation           |
+|:-------------:|:------------------------------------:|
+|  (0020, 0010) | Study ID                             |
+|  (0008, 0080) | Institution Name                     |
+|  (0008, 0081) | Institution Address                  |
+|  (0008, 0090) | Referring Physician's Name           |
+|  (0008, 1040) | Institutional Department Name        |
+|  (0008, 1050) | Performing Physician's Name          |
+|  (0008, 1070) | Operators' Name                      |
+|  (0010, 0010) | Patient's Name                       |
+|  (0010, 0030) | Patient's Birth Date                 |
+|  (0010, 0040) | Patient's Sex                        |
+|  (0010, 1010) | Patient's Age                        |
+|  (0008, 0020) | Study Date                           |
+|  (0008, 0021) | Series Date                          |
+|  (0008, 0022) | Acquisition Date                     |
+|  (0008, 0023) | Content Date                         |
+|  (0008, 0030) | Study Time                           |
+|  (0008, 0031) | Series Time                          |
+|  (0008, 0032) | Acquisition Time                     |
+|  (0008, 0033) | Content Time                         |
+|  (0008, 0050) | Accession Number                     |
+|  (0008, 1032) | Procedure Code Sequence              |
+|  (0008, 0100) | Code Value                           |
+|  (0008, 0102) | Coding Scheme Designator             |
+|  (0008, 0103) | Coding Scheme Version                |
+|  (0008, 0104) | Code Meaning                         |
+|  (0008, 1030) | Study Description                    |
+|  (0008, 103E) | Series Description                   |
+|  (0008, 1040) | Institutional Department name        |
+|  (0018, 0015) | Body Part Examined                   |
+|  (0018, 0024) | Sequence Name                        |
+|  (0018, 1030) | Protocol Name                        |
+|  (0040, 0244) | Performed Procedure Step Start Date  |
+|  (0040, 0245) | Performed Procedure Step Start Time  |
+|  (0040, 0253) | Performed Procedure Step ID          |
+|  (0040, 0254) | Performed Procedure Step Description |
+|  (0040, 0007) | Scheduled Procedure Step Description |
+|  (0040, 0009) | Scheduled Procedure Step ID          |
+|  (0040, 1001) | Requested Procedure ID               |
+|  (0020, 4000) | Image Comments                       |
+|  (0032, 1060) | Requested Procedure Description      |
+|  (0032, 1032) | Requesting Physician                 |
