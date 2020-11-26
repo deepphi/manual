@@ -1,14 +1,41 @@
 # Version 2020-04.1126016
 
 #### New Feature
+- Image to Image 학습을 위해 'Transformation' AI label type을 추가하였습니다.(업로드  : https://deepphi.github.io/manual/chapter4/4-1.데이터셋_템플릿.html,  
+예제 프로젝트 : )
+![](img/transformation.png)
 
-- TODO
+
+- 뉴럴 네트워크 편집 시 블록의 이름 및 설명 Edit 기능 추가
+
+1) 생성 및 편집을 한 블록을 선택 하면 나오는 Info 탭 하단 Edit 버튼 선택
+
+![](img/edit1-1.png)
+
+2) 블록의 이름과 설명 수정 후 Save 버튼 선택
+
+![](img/edit2-2.png)
+
+
+3) 사용자가 수정한 이름과 설명으로 변경 됨을 확인 가능
+
+![](img/edit3-1.png)
+
+
+- 뉴럴 네트워크 편집 시 멀티 Input & Output 형태로 편집 가능 하도록 기능 추가
+
+![](img/multi1-1.png)
+
+- 모델러 상단에 (?) 버튼 선택시 간단한 모듈 상태 및 모듈 기능 Help 버튼 설명 추가.
+
+
+![](img/help3.png)
+
 
 #### Improvement
 
 - Hyper-parameter Auto-Tunning 과정에서 over-fitting을 피하기 위해 perturbation을 주는 로직을 추가하였습니다.
-- Image to Image 학습을 위해 'Transformation' AI label type을 추가하였습니다.(업로드  : https://deepphi.github.io/manual/chapter4/4-1.데이터셋_템플릿.html,  
-예제 프로젝트 : )
+
 
 #### Bug
 
