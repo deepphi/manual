@@ -1,0 +1,820 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4-3.Dicom_파일_비식별화_항목_안내.html" />
+    
+    
+    <link rel="prev" href="4-1.데이터셋_템플릿.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1. 플랫폼 소개
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1-1.딥파이_소개.html">
+            
+                <a href="../chapter1/1-1.딥파이_소개.html">
+            
+                    
+                    1-1. DEEP:PHI 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/1-2.권장사양.html">
+            
+                <a href="../chapter1/1-2.권장사양.html">
+            
+                    
+                    1-2. 권장사양
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/1-3.주요기능.html">
+            
+                <a href="../chapter1/1-3.주요기능.html">
+            
+                    
+                    1-3. 주요기능
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2. 화면 구성
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/2-1.로그인.html">
+            
+                <a href="../chapter2/2-1.로그인.html">
+            
+                    
+                    2-1. 로그인
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/2-2.프로젝트_대시보드.html">
+            
+                <a href="../chapter2/2-2.프로젝트_대시보드.html">
+            
+                    
+                    2-2. 프로젝트 대시보드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/2-3.프로젝트_모델러.html">
+            
+                <a href="../chapter2/2-3.프로젝트_모델러.html">
+            
+                    
+                    2-3. 프로젝트 모델러
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3. 사용 방법
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter3/3-1.프로젝트_구성.html">
+            
+                <a href="../chapter3/3-1.프로젝트_구성.html">
+            
+                    
+                    3-1. 프로젝트 구성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/3-2.데이터셋_업로드_및_관리하기.html">
+            
+                <a href="../chapter3/3-2.데이터셋_업로드_및_관리하기.html">
+            
+                    
+                    3-2. 데이터셋 업로드 및 관리하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter3/3-3.파이프라인_생성.html">
+            
+                <a href="../chapter3/3-3.파이프라인_생성.html">
+            
+                    
+                    3-3. 파이프라인 생성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter3/3-4.성능_평가.html">
+            
+                <a href="../chapter3/3-4.성능_평가.html">
+            
+                    
+                    3-4. 성능 평가
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter3/3-5.성능_고도화.html">
+            
+                <a href="../chapter3/3-5.성능_고도화.html">
+            
+                    
+                    3-5. 성능 고도화
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter3/3-6.부가_기능.html">
+            
+                <a href="../chapter3/3-6.부가_기능.html">
+            
+                    
+                    3-6. 부가 기능
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4. 부록
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="4-1.데이터셋_템플릿.html">
+            
+                <a href="4-1.데이터셋_템플릿.html">
+            
+                    
+                    4-1. 데이터셋 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.html">
+            
+                <a href="4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.html">
+            
+                    
+                    4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="4-3.Dicom_파일_비식별화_항목_안내.html">
+            
+                <a href="4-3.Dicom_파일_비식별화_항목_안내.html">
+            
+                    
+                    4-3. Dicom 파일 비식별화 항목 안내
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4-4.머신러닝_및_딥러닝_용어_정리.html">
+            
+                <a href="4-4.머신러닝_및_딥러닝_용어_정리.html">
+            
+                    
+                    4-4. 머신러닝 및 딥러닝 용어 정리
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    5. History
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../release/2020-04.1126016.html">
+            
+                <a href="../release/2020-04.1126016.html">
+            
+                    
+                    Version 2020-04.1126016
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="4-&#xBD80;&#xB85D;">4. &#xBD80;&#xB85D;</h1>
+<hr>
+<h2 id="4-2-deepphi-&#xD50C;&#xB7AB;&#xD3FC;-&#xBAA8;&#xB4C8;&#xC758;-&#xC785;&#xCD9C;&#xB825;-&#xB370;&#xC774;&#xD130;-&#xAD6C;&#xC870;">4-2. DEEP:PHI &#xD50C;&#xB7AB;&#xD3FC; &#xBAA8;&#xB4C8;&#xC758; &#xC785;/&#xCD9C;&#xB825; &#xB370;&#xC774;&#xD130; &#xAD6C;&#xC870;</h2>
+<p>DEEP:PHI &#xD50C;&#xB7AB;&#xD3FC;&#xC758; Image Processing&#xACFC; Neural Network&#xB294; Python &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xC81C;&#xC791;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C; Custom &#xBAA8;&#xB4C8;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xB294; &#xACBD;&#xC6B0; Python&#xC73C;&#xB85C; &#xD574;&#xB2F9; &#xAE30;&#xB2A5;&#xC758; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xB97C; &#xC9C1;&#xC811; &#xC81C;&#xC791;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.<br>&#xC774;&#xB7EC;&#xD55C; &#xACBD;&#xC6B0;&#xB97C; &#xC704;&#xD574; DEEP:PHI &#xD50C;&#xB7AB;&#xD3FC;&#xC758; &#xBAA8;&#xB4C8;&#xC740; &#xAC01;&#xAC01; &#xC0AC;&#xC804;&#xC5D0; &#xADDC;&#xC57D; &#xB41C; &#xC785;&#xB825;&#xACFC; &#xCD9C;&#xB825;&#xC758; &#xD615;&#xD0DC;&#xB97C; &#xD1B5;&#xD574; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xC640; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xB3D9;&#xC791;&#xC744; &#xC218;&#xD589;&#xD558;&#xB294; &#xC2E4;&#xD589; &#xBD80;&#xBD84;&#xB9CC; &#xCF54;&#xB529;&#xD558;&#xBA74; &#xADF8; &#xC678;&#xC758; &#xBD80;&#xBD84;&#xB4E4;&#xC740; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xB3D9;&#xC791;&#xB418;&#xAC8C; &#xB418;&#xC5B4;&#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; &#xC704;&#xD55C; &#xAC01; &#xBAA8;&#xB4C8;&#xC758; &#xC785;&#xB825;&#xACFC; &#xCD9C;&#xB825;&#xC740; Python Dictionary&#xB85C; &#xC0DD;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>Python Dictionary&#xB294; Python &#xC5B8;&#xC5B4;&#xC758; &#xAE30;&#xBCF8; &#xC790;&#xB8CC;&#xD615;&#xC73C;&#xB85C;&#xC368; Key:Value&#xB85C; &#xAD6C;&#xC131;&#xB41C; &#xD615;&#xD0DC;&#xC758; &#xC624;&#xBE0C;&#xC81D;&#xD2B8;&#xC785;&#xB2C8;&#xB2E4;.<br>Python Dictionary &#xC790;&#xB8CC;&#xD615;&#xC740; &#xC624;&#xBE0C;&#xC81D;&#xD2B8;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xB54C; Key&#xB97C; Dictionary &#xB0B4;&#xC5D0;&#xC11C; &#xAC80;&#xC0C9;&#xD558;&#xC5EC; Value&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-python"><span class="hljs-comment">#ex) &#xC8FC;&#xC18C;&#xB85D; = {&apos;&#xD64D;&#xAE38;&#xB3D9;&apos;:&apos;01011111111&apos;, &apos;&#xC784;&#xAEBD;&#xC815;&apos;:&apos;01022222222&apos;, .... }</span>
+print(&#xC8FC;&#xC18C;&#xB85D;[<span class="hljs-string">&apos;&#xD64D;&#xAE38;&#xB3D9;&apos;</span>])
+<span class="hljs-string">&apos;01011111111&apos;</span>
+</code></pre>
+<p>&#xAC01; &#xBAA8;&#xB4C8;&#xC774; &#xC0AC;&#xC6A9;&#xD558;&#xB294; Dictionary &#xC624;&#xBE0C;&#xC81D;&#xD2B8; &#xC774;&#xB984;&#xC740; <code>data</code>&#xC785;&#xB2C8;&#xB2E4;. Dictionary <code>data</code>&#xB294; <code>image</code>, <code>label</code>, <code>prediction</code>&#xC758; key&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC73C;&#xBA70; &#xAC01;&#xAC01;&#xC758; key&#xC758; value&#xB85C; &#xD558;&#xC704; Dictionary&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC774;&#xB97C; &#xAD6C;&#xC870;&#xB3C4;&#xB85C; &#xD45C;&#xD604;&#xD558;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<h3 id="dataimage&#xC758;-&#xAD6C;&#xC870;">data[&apos;image&apos;]&#xC758; &#xAD6C;&#xC870;</h3>
+<p><img src="img/4-2/manual_4-2_1.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th style="text-align:center">Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">Input image array (numpy array)</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;Direction&apos;]</td>
+<td style="text-align:center">Direction matrix. Default is identity. mapping, rotation, between direction of the pixel/voxel axes and physical directions</td>
+<td style="text-align:center">np.array([1., 0., 0., 1.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;IsVector&apos;]</td>
+<td style="text-align:center">color channel &#xC720;&#xBB34;</td>
+<td style="text-align:center">True / False</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;Origin&apos;]</td>
+<td style="text-align:center">coordinates of the pixel/voxel with index (0,0,0) in physical units</td>
+<td style="text-align:center">np.array([0., 0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;Spacing&apos;]</td>
+<td style="text-align:center">Distance between adjacent pixels/voxels in each dimension given in physical units.</td>
+<td style="text-align:center">np.array([2., 1.1213])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;color_mode&apos;]</td>
+<td style="text-align:center">color channel type</td>
+<td style="text-align:center">&apos;RGB&apos; / &apos;L&apos; (grayscale) / &apos;Binary&apos; (binary)</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;dim&apos;]</td>
+<td style="text-align:center">image dimension</td>
+<td style="text-align:center">2 / 3</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;ndim&apos;]</td>
+<td style="text-align:center">image shape&#xC758; dimension</td>
+<td style="text-align:center">2 / 3 / 4</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;dtype&apos;]</td>
+<td style="text-align:center">pixel data type</td>
+<td style="text-align:center">uint8 / float16</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;modality&apos;]</td>
+<td style="text-align:center">modality of medical image</td>
+<td style="text-align:center">CT / MRI / Xray</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;image&apos;][&apos;header&apos;][&apos;pixel_value_range&apos;]</td>
+<td style="text-align:center">image&#xC758; pixel&#xAC12; &#xC911; &#xCD5C;&#xC18C;, &#xCD5C;&#xB300; &#xAC12;&#xC758; &#xBC94;&#xC704;</td>
+<td style="text-align:center">np.array([0, 255])</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h3 id="datalabel&#xC758;-&#xAD6C;&#xC870;">data[&apos;label&apos;]&#xC758; &#xAD6C;&#xC870;</h3>
+<h4 id="-datalabelclassification&#xC758;-&#xAD6C;&#xC870;">- data[&apos;label&apos;][&apos;classification&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<p><img src="img/4-2/manual_4-2_2_1.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th style="text-align:center">Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;classification&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">one-hot encoding &#xB41C; label array</td>
+<td style="text-align:center">np.array([1., 0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;classification&apos;][&apos;header&apos;][&apos;num_class&apos;]</td>
+<td style="text-align:center">&#xC804;&#xCCB4; class &#xC218;</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;classification&apos;][&apos;header&apos;][&apos;class_name&apos;]</td>
+<td style="text-align:center">&#xAC01; class &#xBA85;&#xC758; list</td>
+<td style="text-align:center">[&apos;normal&apos;, &apos;abnormal&apos;]</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="-datalabelsegmentation&#xC758;-&#xAD6C;&#xC870;">- data[&apos;label&apos;][&apos;segmentation&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<p><img src="img/4-2/manual_4-2_2_2.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th style="text-align:center">Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">Label image array(numpy array)</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;Direction&apos;]</td>
+<td style="text-align:center">Direction matrix. Default is identity. mapping, rotation, between direction of the pixel/voxel axes and physical directions</td>
+<td style="text-align:center">np.array([1., 0., 0., 1.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;IsVector&apos;]</td>
+<td style="text-align:center">color channel &#xC720;&#xBB34;</td>
+<td style="text-align:center">True / False</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;Origin&apos;]</td>
+<td style="text-align:center">coordinates of the pixel/voxel with index (0,0,0) in physical units</td>
+<td style="text-align:center">np.array([0., 0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;Spacing&apos;]</td>
+<td style="text-align:center">distance between adjacent pixels/voxels in each dimension given in physical units</td>
+<td style="text-align:center">np.array([2., 1.1213])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;color_mode&apos;]</td>
+<td style="text-align:center">color channel type</td>
+<td style="text-align:center">&apos;RGB&apos; / &apos;L&apos; (grayscale) / &apos;Binary&apos; (binary)</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;dim&apos;]</td>
+<td style="text-align:center">image dimension</td>
+<td style="text-align:center">2 / 3</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;ndim&apos;]</td>
+<td style="text-align:center">image shape&#xC758; dimension</td>
+<td style="text-align:center">2 / 3 / 4</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;dtype&apos;]</td>
+<td style="text-align:center">pixel data type</td>
+<td style="text-align:center">uint8 / float32</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;class_name&apos;]</td>
+<td style="text-align:center">&#xAC01; class &#xBA85;&#xC758; list</td>
+<td style="text-align:center">[&apos;background&apos;, &apos;target&apos;]</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;class_fraction&apos;]</td>
+<td style="text-align:center">&#xAC01; class &#xBCC4;&#xB85C; &#xB77C;&#xBCA8; &#xB370;&#xC774;&#xD130;&#xC5D0;&#xC11C; &#xCC28;&#xC9C0;&#xD558;&#xB294; &#xBA74;&#xC801; &#xBE44;&#xC728;</td>
+<td style="text-align:center">np.array([0.7, 0.3])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;num_class&apos;]</td>
+<td style="text-align:center">&#xC804;&#xCCB4; class &#xC218;</td>
+<td style="text-align:center">2</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;modality&apos;]</td>
+<td style="text-align:center">modality of medical image</td>
+<td style="text-align:center">CT / MRI / Xray</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;segmentation&apos;][&apos;header&apos;][&apos;piexl_value_range&apos;]</td>
+<td style="text-align:center">image&#xC758; pixel&#xAC12; &#xC911; &#xCD5C;&#xC18C;, &#xCD5C;&#xB300; &#xAC12;&#xC758; &#xBC94;&#xC704;</td>
+<td style="text-align:center">np.array([0, 255])</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="-datalabeldetection&#xC758;-&#xAD6C;&#xC870;">- data[&apos;label&apos;][&apos;detection&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<p><img src="img/4-2/manual_4-2_2_3.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th style="text-align:center">Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;bbox_coordinate&apos;]</td>
+<td style="text-align:center">[xmin,ymin,xmax,ymax] box&#xC758; &#xC88C;&#xD45C; &#xAC12;</td>
+<td style="text-align:center">np.array([[173., 150., 348., 350.], [10., 10., 50., 80.]])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;bbox_class&apos;]</td>
+<td style="text-align:center">&#xAC01; box&#xC758; class&#xC5D0; &#xB300;&#xD55C; one-hot encoding &#xB41C; numpy array</td>
+<td style="text-align:center">np.array([1.,0.,0.,0.,0.], [0.,0.,1.,0.,0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;header&apos;][&apos;classes&apos;]</td>
+<td style="text-align:center">&#xAC01; class&#xC5D0; &#xB300;&#xD55C; index &#xBC0F; &#xC774;&#xB984;</td>
+<td style="text-align:center">{&apos;dog&apos;: 0, &apos;cat&apos;:1, &apos;person&apos; : 2, &apos;bird&apos; : 3, &apos;boat&apos; : 4)}</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;header&apos;][&apos;num_class&apos;]</td>
+<td style="text-align:center">&#xC804;&#xCCB4; class &#xC218;</td>
+<td style="text-align:center">4</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="-dataprediction&#xC758;-&#xAD6C;&#xC870;">- data[&apos;prediction&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<p><img src="img/4-2/manual_4-2_2_4.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th style="text-align:center">Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;classification&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">prediction result&#xAC00; one-hot encoding &#xB41C; &#xACB0;&#xACFC;</td>
+<td style="text-align:center">np.array([1., 0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;classification&apos;][&apos;header&apos;]</td>
+<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;segmentation&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">prediction result&#xAC00; image array(np.array)&#xB85C; &#xC800;&#xC7A5;&#xB41C; &#xACB0;&#xACFC;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;segmentation&apos;][&apos;header&apos;]</td>
+<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;bbox_coordinate&apos;]</td>
+<td style="text-align:center">prediction result&#xC758; bbox &#xC88C;&#xD45C; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
+<td style="text-align:center">np.array([180., 149. 350. 348])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;bbox_class&apos;]</td>
+<td style="text-align:center">prediction result&#xC758; &#xD574;&#xB2F9; bbox&#xC758; &#xD074;&#xB798;&#xC2A4; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
+<td style="text-align:center">np.array([1.,0.,0.,0.,0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;header&apos;]</td>
+<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4-1.데이터셋_템플릿.html" class="navigation navigation-prev " aria-label="Previous page: 4-1. 데이터셋 템플릿">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4-3.Dicom_파일_비식별화_항목_안내.html" class="navigation navigation-next " aria-label="Next page: 4-3. Dicom 파일 비식별화 항목 안내">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조","level":"1.5.2","depth":2,"next":{"title":"4-3. Dicom 파일 비식별화 항목 안내","level":"1.5.3","depth":2,"path":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","ref":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","articles":[]},"previous":{"title":"4-1. 데이터셋 템플릿","level":"1.5.1","depth":2,"path":"chapter4/4-1.데이터셋_템플릿.md","ref":"chapter4/4-1.데이터셋_템플릿.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.md","mtime":"2020-11-25T08:15:31.563Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-25T08:16:43.525Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
