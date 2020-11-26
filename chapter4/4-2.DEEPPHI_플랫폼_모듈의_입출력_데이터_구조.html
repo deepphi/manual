@@ -668,29 +668,29 @@ print(&#xC8FC;&#xC18C;&#xB85D;[<span class="hljs-string">&apos;&#xD64D;&#xAE38;&
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;bbox_coordinate&apos;]</td>
+<td style="text-align:center">data[&apos;label&apos;][&apos;object_detection&apos;][&apos;bbox_coordinate&apos;]</td>
 <td style="text-align:center">[xmin,ymin,xmax,ymax] box&#xC758; &#xC88C;&#xD45C; &#xAC12;</td>
 <td style="text-align:center">np.array([[173., 150., 348., 350.], [10., 10., 50., 80.]])</td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;bbox_class&apos;]</td>
+<td style="text-align:center">data[&apos;label&apos;][&apos;object_detection&apos;][&apos;bbox_class&apos;]</td>
 <td style="text-align:center">&#xAC01; box&#xC758; class&#xC5D0; &#xB300;&#xD55C; one-hot encoding &#xB41C; numpy array</td>
 <td style="text-align:center">np.array([1.,0.,0.,0.,0.], [0.,0.,1.,0.,0.])</td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;header&apos;][&apos;classes&apos;]</td>
+<td style="text-align:center">data[&apos;label&apos;][&apos;object_detection&apos;][&apos;header&apos;][&apos;classes&apos;]</td>
 <td style="text-align:center">&#xAC01; class&#xC5D0; &#xB300;&#xD55C; index &#xBC0F; &#xC774;&#xB984;</td>
 <td style="text-align:center">{&apos;dog&apos;: 0, &apos;cat&apos;:1, &apos;person&apos; : 2, &apos;bird&apos; : 3, &apos;boat&apos; : 4)}</td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;label&apos;][&apos;detection&apos;][&apos;header&apos;][&apos;num_class&apos;]</td>
+<td style="text-align:center">data[&apos;label&apos;][&apos;object_detection&apos;][&apos;header&apos;][&apos;num_class&apos;]</td>
 <td style="text-align:center">&#xC804;&#xCCB4; class &#xC218;</td>
 <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <p><br></p>
-<h4 id="-dataprediction&#xC758;-&#xAD6C;&#xC870;">- data[&apos;prediction&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<h4 id="-datalabeltransformation&#xC758;-&#xAD6C;&#xC870;">- data[&apos;label&apos;][&apos;transformation&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
 <p><img src="img/4-2/manual_4-2_2_4.jpg" alt=""></p>
 <table>
 <thead>
@@ -702,39 +702,119 @@ print(&#xC8FC;&#xC18C;&#xB85D;[<span class="hljs-string">&apos;&#xD64D;&#xAE38;&
 </thead>
 <tbody>
 <tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;array&apos;]</td>
+<td style="text-align:center">Label image array(numpy array)</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;Direction&apos;]</td>
+<td style="text-align:center">Direction matrix. Default is identity. mapping, rotation, between direction of the pixel/voxel axes and physical directions</td>
+<td style="text-align:center">np.array([1., 0., 0., 1.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;IsVector&apos;]</td>
+<td style="text-align:center">color channel &#xC720;&#xBB34;</td>
+<td style="text-align:center">True / False</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;Origin&apos;]</td>
+<td style="text-align:center">coordinates of the pixel/voxel with index (0,0,0) in physical units</td>
+<td style="text-align:center">np.array([0., 0.])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;Spacing&apos;]</td>
+<td style="text-align:center">distance between adjacent pixels/voxels in each dimension given in physical units</td>
+<td style="text-align:center">np.array([2., 1.1213])</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;color_mode&apos;]</td>
+<td style="text-align:center">color channel type</td>
+<td style="text-align:center">&apos;RGB&apos; / &apos;L&apos; (grayscale) / &apos;Binary&apos; (binary)</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;dim&apos;]</td>
+<td style="text-align:center">image dimension</td>
+<td style="text-align:center">2 / 3</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;ndim&apos;]</td>
+<td style="text-align:center">image shape&#xC758; dimension</td>
+<td style="text-align:center">2 / 3 / 4</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;dtype&apos;]</td>
+<td style="text-align:center">pixel data type</td>
+<td style="text-align:center">uint8 / float32</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;modality&apos;]</td>
+<td style="text-align:center">modality of medical image</td>
+<td style="text-align:center">CT / MRI / Xray</td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;label&apos;][&apos;transformation&apos;][&apos;header&apos;][&apos;piexl_value_range&apos;]</td>
+<td style="text-align:center">image&#xC758; pixel&#xAC12; &#xC911; &#xCD5C;&#xC18C;, &#xCD5C;&#xB300; &#xAC12;&#xC758; &#xBC94;&#xC704;</td>
+<td style="text-align:center">np.array([0, 255])</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h4 id="-dataprediction&#xC758;-&#xAD6C;&#xC870;">- data[&apos;prediction&apos;]&#xC758; &#xAD6C;&#xC870;</h4>
+<p><img src="img/4-2/manual_4-2_2_5.jpg" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Dictionary Key:value</th>
+<th>Data Explanation</th>
+<th style="text-align:center">Data Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td style="text-align:center">data[&apos;prediction&apos;][&apos;classification&apos;][&apos;array&apos;]</td>
-<td style="text-align:center">prediction result&#xAC00; one-hot encoding &#xB41C; &#xACB0;&#xACFC;</td>
+<td>prediction result&#xAC00; one-hot encoding &#xB41C; &#xACB0;&#xACFC;</td>
 <td style="text-align:center">np.array([1., 0.])</td>
 </tr>
 <tr>
 <td style="text-align:center">data[&apos;prediction&apos;][&apos;classification&apos;][&apos;header&apos;]</td>
-<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td>&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">data[&apos;prediction&apos;][&apos;segmentation&apos;][&apos;array&apos;]</td>
-<td style="text-align:center">prediction result&#xAC00; image array(np.array)&#xB85C; &#xC800;&#xC7A5;&#xB41C; &#xACB0;&#xACFC;</td>
+<td>prediction result&#xAC00; image array(np.array)&#xB85C; &#xC800;&#xC7A5;&#xB41C; &#xACB0;&#xACFC;</td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">data[&apos;prediction&apos;][&apos;segmentation&apos;][&apos;header&apos;]</td>
-<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td>&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;bbox_coordinate&apos;]</td>
-<td style="text-align:center">prediction result&#xC758; bbox &#xC88C;&#xD45C; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;object_detection&apos;][&apos;bbox_coordinate&apos;]</td>
+<td>prediction result&#xC758; bbox &#xC88C;&#xD45C; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
 <td style="text-align:center">np.array([180., 149. 350. 348])</td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;bbox_class&apos;]</td>
-<td style="text-align:center">prediction result&#xC758; &#xD574;&#xB2F9; bbox&#xC758; &#xD074;&#xB798;&#xC2A4; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;object_detection&apos;][&apos;bbox_class&apos;]</td>
+<td>prediction result&#xC758; &#xD574;&#xB2F9; bbox&#xC758; &#xD074;&#xB798;&#xC2A4; &#xC815;&#xBCF4;&#xAC00; &#xB2F4;&#xAE34; &#xACB0;&#xACFC;</td>
 <td style="text-align:center">np.array([1.,0.,0.,0.,0.])</td>
 </tr>
 <tr>
-<td style="text-align:center">data[&apos;prediction&apos;][&apos;detection&apos;][&apos;header&apos;]</td>
-<td style="text-align:center">&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;object_detection&apos;][&apos;header&apos;]</td>
+<td>&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
 <td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;transformation&apos;][&apos;array&apos;]</td>
+<td>prediction result&#xAC00; image array(np.array)&#xB85C; &#xC800;&#xC7A5;&#xB41C; &#xACB0;&#xACFC;</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">data[&apos;prediction&apos;][&apos;transformation&apos;][&apos;header&apos;]</td>
+<td>&#xBA54;&#xD0C0;&#xB370;&#xC774;&#xD130; &#xBCF4;&#xAD00;&#xC744; &#xC704;&#xD55C; &#xBE44;&#xC5B4; &#xC788;&#xB294; Dictionary</td>
 </tr>
 </tbody>
 </table>
@@ -781,7 +861,7 @@ print(&#xC8FC;&#xC18C;&#xB85D;[<span class="hljs-string">&apos;&#xD64D;&#xAE38;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조","level":"1.5.2","depth":2,"next":{"title":"4-3. Dicom 파일 비식별화 항목 안내","level":"1.5.3","depth":2,"path":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","ref":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","articles":[]},"previous":{"title":"4-1. 데이터셋 템플릿","level":"1.5.1","depth":2,"path":"chapter4/4-1.데이터셋_템플릿.md","ref":"chapter4/4-1.데이터셋_템플릿.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.md","mtime":"2020-11-25T08:15:31.563Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-25T08:16:43.525Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조","level":"1.5.2","depth":2,"next":{"title":"4-3. Dicom 파일 비식별화 항목 안내","level":"1.5.3","depth":2,"path":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","ref":"chapter4/4-3.Dicom_파일_비식별화_항목_안내.md","articles":[]},"previous":{"title":"4-1. 데이터셋 템플릿","level":"1.5.1","depth":2,"path":"chapter4/4-1.데이터셋_템플릿.md","ref":"chapter4/4-1.데이터셋_템플릿.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.md","mtime":"2020-11-26T08:06:05.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-26T08:06:59.829Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
