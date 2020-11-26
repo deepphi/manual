@@ -7,6 +7,8 @@
 #### Improvement
 
 - Hyper-parameter Auto-Tunning 과정에서 over-fitting을 피하기 위해 perturbation을 주는 로직을 추가하였습니다.
+- Image to Image 학습을 위해 'Transformation' AI label type을 추가하였습니다.(업로드  : https://deepphi.github.io/manual/chapter4/4-1.데이터셋_템플릿.html,  
+예제 프로젝트 : )
 
 #### Bug
 
@@ -25,3 +27,4 @@
     
 - 메뉴얼 업데이트
   - [3-5.6. Hyper-parameter Auto-Tunning](https://deepphi.github.io/manual/chapter3/3-5.성능_고도화.html#6-hyper-parameter-auto-tunning)
+  - [4-1.4. Transformation 데이터셋 구조](https://deepphi.github.io/manual/chapter4/4-1.데이터셋_템플릿.html)
