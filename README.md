@@ -53,6 +53,13 @@
 
 ![](img/layer_validation_2.png)
 
+2. Scheduled 상태 추가
+- 모듈 실행 시 시스템 가용 자원이 부족할 경우 Scheduled 상태로 모듈 상태가 변경되며, 가용자원이 확보 되면 자동으로 실행 상태로 변경됨
+
+> 2-1 Scheduled 상태가 되면 현재 대기 중인 모듈의 이름과 순번을 확인 Scheduled 버튼을 클릭하여 확인 가능
+
+![](img/scheduled_1.png)
+
 #### Bug
 
 
