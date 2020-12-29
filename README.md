@@ -1,70 +1,63 @@
-# Version 2020-04.1126016
+# Version 2020-04.12290001(12100001)
 
 #### New Feature
 
-1.Image to Image 학습을 위해 'Transformation' AI label type을 추가하였습니다.
+1.뉴럴네으퉈크 모델러에 새로운 카테고리 추가
+> 1-1 Input Layer Category 추가
 
-예제 프로젝트 : https://www.deepphi.ai/modeler/3699
+> 1-2 Block Layer Category 추가
 
-동영상 : https://www.youtube.com/watch?v=YkrASS0BenA
+![](img/input_block_category.png)
 
-![](img/transformation.png)
+2.뉴럴네트워크 모델러 편집기 기능 업데이트
+> 2-1 Layer 생성 기능 추가
 
+![](img/layer_create_1.png)
 
-2.뉴럴 네트워크 편집 시 블록의 이름 및 설명 Edit 기능 추가
+> 2-2 Layer 복사 삭제 기능 추가
+- 기존에 존재하는 Layer 를 복사 하여 사용자 개인의 Layer 로 편집 가능
 
-> 2-1 생성 및 편집을 한 블록을 선택 하면 나오는 Info 탭 하단 Edit 버튼 선택
+![](img/layer_copy.png)
 
-![](img/edit1-1.png)
+> 2-3 Layer 이름 및 설명 편집 기능 추가
+- Edit 버튼 클릭을 통해 My Layer 의 이름 및 설명 편집 가능
 
-> 2-2 블록의 이름과 설명 수정 후 Save 버튼 선택
+![](img/layer_edit_3.png)
 
-![](img/edit2-2.png)
+> 2-4 Layer 소스 코드 편집 기능 추가
+- <-> 버튼 과 Code 버튼 선택을 통해 코드 편집창 진입 가능
 
-> 2-3 사용자가 수정한 이름과 설명으로 변경 됨을 확인 가능
+![](img/enter_layer_source_code_1.png)
 
-![](img/edit3-1.png)
+- Layer 들을 실제로 구성하고 있는 소스 코드를 확인 및 My layer 에 한해서 편집 가능
 
-3.뉴럴 네트워크 편집 시 멀티 Input & Output 형태로 편집 가능 하도록 기능 추가
+![](img/layer_source_code_save_1.png)
 
-![](img/multi1-1.png)
+> 2-5 Layer 파라미터 편집 기능 추가
+- 소스코드를 편집 가능 함에 따라 소스코드에 사용하는 파라미터 편집 가능
 
-4.모델러 상단에 (?) 버튼 선택시 간단한 모듈 상태 및 모듈 기능 Help 버튼 설명 추가.
+![](img/layer_parameter_2.png)
 
-![](img/help3.png)
+![](img/layer_parameter_1.png)
+
+> 2-6 뉴럴네트워크를 구성하고 있는 Layer, Block 를 My 로 저장 기능 추가
+- 뉴럴 네트워크에서 사용 하기위해 사용자가 편집한 Layer 를 My로 저장하여 다른 네트워크 조립 시에 재사용 가능
+- 뉴럴 네트워크에서 자주 사용하는 Block를 My 로 저장 하여 다양한 네트워크 조립 시에 재사용 가능
+
+![](img/layer_save_to_my.png)
 
 #### Improvement
 
-1.Hyper-parameter Auto-Tunning 과정에서 over-fitting을 피하기 위해 perturbation을 주는 로직을 추가하였습니다.
 
-2.image processing parameter setting 시 Value Type(string or number)선택 및 Number 일 때 Range 설정이 가능하게 추가했습니다.
-
-> 2-1.Image processing 모듈을 선택한 뒤 우측 파라미터 탭을 누르고 Add Row를 눌러 파라미터를 추가합니다.
-
-> 2-2.Parameter Type을 Input으로 설정하고, Value Type을 Number로 선택 한 뒤 Value Range에서 Range를 설정합니다.
-
-<img src="img/imageParameter1-1.png" style="width:550px">
-
-- Range를 설정한 파라미터는 focus시 Tooltip으로 설정한 Range를 확인할 수 있습니다.
-
-<img src="img/imageParameter1-2.png" style="width:550px">
 
 #### Bug
 
-- 데이터셋 업로드시 확장자가 대문자인 경우 업로드가 안되는 버그 수정 ex) NII가 확장자인 경우
-- Hyper-parameter Auto-Tunning 과정에서 learning rate이 1보다 커지는 버그 수정
+
 
 #### Task
 
 - 튜토리얼 동영상 추가
-  - [1-1. Upload Dataset](https://www.youtube.com/watch?v=Lq3aRIJWJzU)
-  - 1-2. Dataset Structure
-    - [1-2-1. Classification Dataset Structure](https://www.youtube.com/watch?v=C_kyji4VdFY)
-    - [1-2-2. Segmentation Dataset Structure](https://www.youtube.com/watch?v=1alhmYLbJVM)
-    - [1-2-3. Detection Dataset Structure](https://www.youtube.com/watch?v=fnlcc8pNpFY)
-  - [2. Screen Layout](https://www.youtube.com/watch?v=o37cKaOnmpo)
-  - [3. A Simple Example Project](https://www.youtube.com/watch?v=DPhcsNuLWjE)
-  - [4-1. Classification Example Project](https://www.youtube.com/watch?v=WpInLRUibAM)
+
 - 메뉴얼 업데이트
-  - [3-5.6. Hyper-parameter Auto-Tunning](https://deepphi.github.io/manual/chapter3/3-5.성능_고도화.html#6-hyper-parameter-auto-tunning)
-  - [4-1.4. Transformation 데이터셋 구조](https://deepphi.github.io/manual/chapter4/4-1.데이터셋_템플릿.html)
+  - [3-5.6. 커스텀 Layer 만들기](https://deepphi.github.io/manual/chapter3/3-5.성능_고도화.html#6-hyper-parameter-auto-tunning)
+
