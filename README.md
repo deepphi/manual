@@ -2,15 +2,15 @@
 
 #### New Feature
 
-1.뉴럴네으퉈크 모델러에 새로운 카테고리 추가
+1. 뉴럴네으퉈크 모델러에 새로운 카테고리 추가
   - Input Layer Category 추가
   - Block Layer Category 추가
 
-&nbsp;&nbsp;![](img/input_block_category.png)
+&nbsp;&nbsp;&nbsp;![](img/input_block_category.png)
 
-2.뉴럴네트워크 모델러 편집기 기능 업데이트
+2. 뉴럴네트워크 모델러 편집기 기능 업데이트
   - Layer 생성 기능 추가
-  ![](img/layer_create_1.png)
+    ![](img/layer_create_1.png)
 
   - Layer 복사 삭제 기능 추가  
   기존에 존재하는 Layer 를 복사 하여 사용자 개인의 Layer 로 편집 가능
