@@ -48,7 +48,10 @@
 
 #### Improvement
 
+1. 뉴럴네트워크 모델러 편집기의 Validation 기능 강화
+- Validation 를 통해 문제가 발생하는 Layer 에 대해 편집기에서 빨간색 Layer로 표현
 
+![](img/layer_validation_2.png)
 
 #### Bug
 
