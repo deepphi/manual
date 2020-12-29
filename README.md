@@ -5,7 +5,8 @@
 1. 뉴럴네으퉈크 모델러에 새로운 카테고리 추가
   - Input Layer Category 추가
   - Block Layer Category 추가
-  ![](img/input_block_category.png)
+  
+&nbsp;&nbsp;![](img/input_block_category.png)
 
 2. 뉴럴네트워크 모델러 편집기 기능 업데이트
   - Layer 생성 기능 추가
