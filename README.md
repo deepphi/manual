@@ -2,7 +2,7 @@
 
 #### New Feature
 
-1.뉴럴네크 모델러에 새로운 카테고리 추가  
+1.뉴럴네트워크 모델러에 새로운 카테고리 추가  
 
 (1) Input Layer Category 추가  
 
