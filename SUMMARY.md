@@ -1,7 +1,5 @@
 # 목차
 
-* [Introduction](chapter1/1-1.딥파이_소개.md)
-
 - [1. 플랫폼 소개]()
   - [1-1. DEEP:PHI 소개](chapter1/1-1.딥파이_소개.md)
   - [1-2. 권장사양](chapter1/1-2.권장사양.md)
