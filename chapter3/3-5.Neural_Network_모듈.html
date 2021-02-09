@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3-4. Neural Network 모듈 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3-6.프로젝트_실행하기.md" />
+    
+    
+    <link rel="prev" href="3-4.Data_Manipulation_모듈.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    1. 플랫폼 소개
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1-1.딥파이_소개.html">
+            
+                <a href="../chapter1/1-1.딥파이_소개.html">
+            
+                    
+                    1-1. DEEP:PHI 소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/1-2.주요기능.html">
+            
+                <a href="../chapter1/1-2.주요기능.html">
+            
+                    
+                    1-2. 주요기능
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/1-3.권장사양.html">
+            
+                <a href="../chapter1/1-3.권장사양.html">
+            
+                    
+                    1-3. 권장사양
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    2. 화면 구성
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/2-1.메인화면.md">
+            
+                <span>
+            
+                    
+                    2-1. 메인화면
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/2-2.프로젝트_대시보드.html">
+            
+                <a href="../chapter2/2-2.프로젝트_대시보드.html">
+            
+                    
+                    2-2. 프로젝트 대시보드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    3. 사용 방법
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3-1.프로젝트_시작하기.html">
+            
+                <a href="3-1.프로젝트_시작하기.html">
+            
+                    
+                    3-1. 프로젝트 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3-2.Dataset_모듈.html">
+            
+                <a href="3-2.Dataset_모듈.html">
+            
+                    
+                    3-2. Dataset 모듈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3-3.Image_Processing_모듈.html">
+            
+                <a href="3-3.Image_Processing_모듈.html">
+            
+                    
+                    3-3. Image Processing 모듈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="3-4.Data_Manipulation_모듈.html">
+            
+                <a href="3-4.Data_Manipulation_모듈.html">
+            
+                    
+                    3-4. Data Manipulation 모듈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="3-5.Neural_Network_모듈.html">
+            
+                <a href="3-5.Neural_Network_모듈.html">
+            
+                    
+                    3-4. Neural Network 모듈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="3-6.프로젝트_실행하기.md">
+            
+                <span>
+            
+                    
+                    3-5. 프로젝트 실행하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="3-7.테스트_프로젝트_전환.html">
+            
+                <a href="3-7.테스트_프로젝트_전환.html">
+            
+                    
+                    3-6. 테스트 프로젝트 전환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="3-8.부가_기능.html">
+            
+                <a href="3-8.부가_기능.html">
+            
+                    
+                    3-6. 부가 기능
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    4. 부록
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapter4/4-1.데이터셋_템플릿.html">
+            
+                <a href="../chapter4/4-1.데이터셋_템플릿.html">
+            
+                    
+                    4-1. 데이터셋 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../chapter4/4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.html">
+            
+                <a href="../chapter4/4-2.DEEPPHI_플랫폼_모듈의_입출력_데이터_구조.html">
+            
+                    
+                    4-2. DEEP:PHI 플랫폼 모듈의 입/출력 데이터 구조
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../chapter4/4-3.Dicom_파일_비식별화_항목_안내.html">
+            
+                <a href="../chapter4/4-3.Dicom_파일_비식별화_항목_안내.html">
+            
+                    
+                    4-3. Dicom 파일 비식별화 항목 안내
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../chapter4/4-4.머신러닝_및_딥러닝_용어_정리.html">
+            
+                <a href="../chapter4/4-4.머신러닝_및_딥러닝_용어_정리.html">
+            
+                    
+                    4-4. 머신러닝 및 딥러닝 용어 정리
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3-4. Neural Network 모듈</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-&#xC0AC;&#xC6A9;-&#xBC29;&#xBC95;">3. &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;</h1>
+<hr>
+<h2 id="3-5-neural-network-&#xBAA8;&#xB4C8;">3-5. Neural Network &#xBAA8;&#xB4C8;</h2>
+<p>&#xB370;&#xC774;&#xD130;&#xC14B; &#xBD88;&#xB7EC;&#xC624;&#xAE30;&#xC640; &#xAC00;&#xACF5;&#xC744; &#xB9C8;&#xCCE4;&#xC73C;&#xBA74; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; Neural Network &#xBAA8;&#xB4C8;&#xC5D0; &#xC5F0;&#xACB0;&#xD574; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xD559;&#xC2B5;&#xD569;&#xB2C8;&#xB2E4;.  </p>
+<p>DEEP:PHI &#xD50C;&#xB7AB;&#xD3FC;&#xC5D0;&#xB294; &#xC9C0;&#xB3C4;&#xD559;&#xC2B5;(Supervised Learning) &#xAE30;&#xBC18;&#xC758; &#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xB4E4;&#xC774; &#xD0D1;&#xC7AC;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC2E0;&#xACBD;&#xB9DD;(Neural Network)&#xC740; &#xC0DD;&#xBB3C;&#xC758; &#xC2E0;&#xACBD;&#xACC4;&#xB97C; &#xC218;&#xD559;&#xC801;&#xC73C;&#xB85C; &#xBAA8;&#xC0AC;&#xD558;&#xC5EC; &#xC791;&#xB3D9;&#xD558;&#xB3C4;&#xB85D; &#xC124;&#xACC4;&#xB41C; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC785;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC591;&#xD55C; &#xBC29;&#xBC95;&#xC744; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xC785;&#xB825; &#xB370;&#xC774;&#xD130;&#xB85C;&#xBD80;&#xD130; &#xC758;&#xBBF8;&#xC788;&#xB294; &#xD2B9;&#xC9D5;(Feature)&#xB4E4;&#xC744; &#xCD94;&#xCD9C;&#xD558;&#xACE0; &#xC774; &#xD2B9;&#xC9D5;&#xB4E4;&#xC744; &#xAC01; &#xC2E0;&#xACBD;&#xB9DD; &#xB178;&#xB4DC;&#xB4E4;&#xC774; &#xD559;&#xC2B5;&#xD558;&#xBA74;&#xC11C; &#xC815;&#xB2F5;&#xC744; &#xCC3E;&#xC544;&#xAC00;&#xB3C4;&#xB85D; &#xB9CC;&#xB4E4;&#xC5B4;&#xC838; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
+<p>&#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xD1B5;&#xD574; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBD84;&#xC11D;&#xD558;&#xB824;&#xB294; &#xBAA9;&#xC801;&#xC5D0; &#xB530;&#xB77C; &#xD06C;&#xAC8C;  Classification, Segmentation, Detection, Transformation&#xC73C;&#xB85C; &#xB098;&#xB20C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>Classification : &#xC785;&#xB825; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD1B5;&#xD574; &#xB370;&#xC774;&#xD130;&#xC758; Class&#xB97C; &#xBD84;&#xB958;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.<br><em>ex) &#xC815;&#xC0C1; &#xD658;&#xC790; vs &#xBE44;&#xC815;&#xC0C1; &#xD658;&#xC790;&#xC758; &#xAD6C;&#xBD84;, &#xC591;&#xC131; &#xC885;&#xC591; vs &#xC545;&#xC131; &#xC885;&#xC591;&#xC758; &#xAD6C;&#xBD84; &#xB4F1;</em></li>
+<li>Segmentation : &#xC785;&#xB825; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD1B5;&#xD574; &#xB370;&#xC774;&#xD130;&#xC758; &#xD2B9;&#xC815; &#xC601;&#xC5ED;&#xC744; &#xBD84;&#xD560;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.<br><em>ex) Brain MRI &#xC601;&#xC0C1;&#xC5D0;&#xC11C; enhancing tumor, tumor core, whole tumor&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xC5EC; &#xCD94;&#xCD9C;</em></li>
+<li>Detection : &#xC785;&#xB825; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD1B5;&#xD574; &#xB370;&#xC774;&#xD130;&#xC5D0;&#xC11C; &#xBB3C;&#xCCB4;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xD0D0;&#xC9C0;&#xD558;&#xB294; &#xC791;&#xC5C5;&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.<br><em>ex) Lung CT &#xC601;&#xC0C1;&#xC5D0;&#xC11C; Lung Nodule&#xC758; &#xC704;&#xCE58;&#xB97C; &#xC88C;&#xD45C;&#xB85C; &#xD0D0;&#xC9C0;</em></li>
+<li>Transformation : &#xD558;&#xB098;&#xC758; &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xB2E4;&#xB978; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xBCC0;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.<br><em>ex) T1-weighted MRI&#xB97C; T2-weighted MRI&#xB85C; &#xBCC0;&#xD658;</em></li>
+</ul>
+<blockquote>
+<p>DEEP:PHI &#xD50C;&#xB7AB;&#xD3FC;&#xC5D0;&#xC120; &#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xC5F0;&#xAD6C;&#xC6D0;&#xB4E4;&#xC774; &#xC2E4;&#xC81C; &#xC5F0;&#xAD6C; &#xACFC;&#xC815;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC788;&#xB294; &#xB2E4;&#xC591;&#xD55C; &#xC885;&#xB958;&#xC758; &#xC2E0;&#xACBD;&#xB9DD;&#xB4E4;&#xC744; &#xC9C0;&#xC18D;&#xC801;&#xC73C;&#xB85C; &#xD50C;&#xB7AB;&#xD3FC;&#xC5D0; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
+</blockquote>
+<p><br></p>
+<h3 id="1-neural-network-&#xBAA8;&#xB4C8;-&#xC0AC;&#xC6A9;&#xD558;&#xAE30;">(1) Neural Network &#xBAA8;&#xB4C8; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;</h3>
+<p><img src="img/3-5/manual_3-5_1_1.png" alt=""></p>
+<p>&#x2460; Neural Network &#xBAA8;&#xB4C8;&#xC740; &#xC218;&#xD589;&#xD558;&#xB294; task&#xC5D0; &#xB530;&#xB77C; &#xBD84;&#xB958;&#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_1_2.png" alt=""></p>
+<p>&#x2461; &#xBAA8;&#xB4C8;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xBA74; &#xC6B0;&#xCE21; &#xBA54;&#xB274;&#xC758; <span style="color:red">Information&#xD0ED;</span>&#xC5D0;&#xC11C; &#xBAA8;&#xB4C8;&#xC758; &#xC815;&#xBCF4;&#xC640; &#xC0C1;&#xC138;&#xC124;&#xBA85;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xD574;&#xB2F9; Information&#xC744; &#xD655;&#xC778;&#xD558;&#xACE0; &#xC801;&#xC808;&#xD55C; &#xBAA8;&#xB4C8;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_1_3.png" alt=""></p>
+
+<p>&#x2462; &#xC0AC;&#xC6A9;&#xD560; &#xBAA8;&#xB4C8;&#xC744; &#xAC00;&#xC6B4;&#xB370; Flow workspace&#xC5D0; &#xBC30;&#xCE58;&#xD558;&#xACE0;, &#xBAA8;&#xB4C8;&#xC744; &#xC5F0;&#xACB0;&#xD569;&#xB2C8;&#xB2E4;.<br>Neural Network&#xC5D0; &#xC5F0;&#xACB0;&#xB41C; &#xBAA8;&#xB4C8;&#xC774; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xC785;&#xB825;&#xC73C;&#xB85C; &#xB4E4;&#xC5B4;&#xC635;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_1_4.png" alt=""></p>
+<p>&#x2463; &#xBAA8;&#xB4C8;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &#xC6B0;&#xCE21; &#xBA54;&#xB274;&#xC758; Parameter &#xD0ED;&#xC5D0;&#xC11C; &#xD559;&#xC2B5;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xD559;&#xC2B5;&#xC2DC;&#xD0AC; &#xB54C;&#xC5D0;&#xB294; &#xC5EC;&#xB7EC; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xC870;&#xC815;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xC2E0;&#xACBD;&#xB9DD; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xAC12;&#xC5D0;&#xB294; &#xC815;&#xB2F5;&#xC774; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC5EC;&#xB7EC; &#xBC88; &#xC2E4;&#xD5D8;&#xC744; &#xAC70;&#xCCD0; &#xAC00;&#xC7A5; &#xCD5C;&#xC801;&#xC758; &#xACB0;&#xACFC;&#xB97C; &#xB0B4;&#xB294; &#xAC12;&#xC744; &#xC120;&#xD0DD;&#xC560;&#xD590; &#xD569;&#xB2C8;&#xB2E4;.  </p>
+<p>&#xC2E0;&#xACBD;&#xB9DD; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xBAA9;&#xB85D;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>Parameter: &#xC2E0;&#xACBD;&#xB9DD; &#xD559;&#xC2B5; &#xACFC;&#xC815;&#xACFC; &#xAD00;&#xB828;&#xC774; &#xC788;&#xB294; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC785;&#xB2C8;&#xB2E4;.<br>-<em>epoch: &#xD559;&#xC2B5;&#xC744; &#xBA87; &#xD68C; &#xBC18;&#xBCF5;&#xD560;&#xC9C0;&#xB97C; &#xACB0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</em><br>-<em>batch_size: &#xD55C;&#xBC88;&#xC5D0; &#xBA87; &#xAC1C;&#xC758; &#xB370;&#xC774;&#xD130;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xD559;&#xC2B5;&#xC744; &#xC9C4;&#xD589;&#xD560;&#xC9C0;&#xB97C; &#xACB0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. batch_size&#xAC00; &#xD074; &#xC218;&#xB85D; &#xD559;&#xC2B5;&#xC740; &#xBE60;&#xB974;&#xAC8C; &#xC9C4;&#xD589;&#xB418;&#xB098; resource&#xAC00; &#xB9CE;&#xC774; &#xC694;&#xAD6C;&#xB429;&#xB2C8;&#xB2E4;.</em><br>-<em>learning_rate_decay: &#xB9E4; epoch&#xB9C8;&#xB2E4; learning rate&#xB97C; &#xAC10;&#xC18C;&#xC2DC;&#xD0AC; &#xBE44;&#xC728;&#xC744; &#xACB0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</em>  </li>
+<li>Augmentation: &#xB370;&#xC774;&#xD130;&#xC5D0; &#xBCC0;&#xD615;&#xC744; &#xAC00;&#xD574; &#xB370;&#xC774;&#xD130;&#xC758; &#xC218;&#xB97C; &#xB298;&#xB9BC;&#xC73C;&#xB85C;&#xC368; &#xC2E0;&#xACBD;&#xB9DD;&#xC758; &#xACFC;&#xC801;&#xD569;&#xC744; &#xBC29;&#xC9C0;&#xD558;&#xB294; &#xD6A8;&#xACFC;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>-<em>Augmentation&#xC744; &#xB9CE;&#xC774; &#xC0AC;&#xC6A9;&#xD560;&#xC218;&#xB85D; &#xACFC;&#xC801;&#xD569;&#xC744; &#xBC29;&#xC9C0;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC9C0;&#xB9CC; &#xB370;&#xC774;&#xD130; &#xC218;&#xAC00; &#xB298;&#xC5B4;&#xB098; &#xD559;&#xC2B5; &#xC2DC;&#xAC04;&#xC774; &#xC99D;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</em>  </li>
+<li>Optimizer: &#xC2E0;&#xACBD;&#xB9DD; &#xD559;&#xC2B5;&#xC740; &#xB0B4;&#xBD80;&#xC758; &#xC218;&#xB9CE;&#xC740; weight&#xB97C; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xC774; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xCD5C;&#xC801;&#xD654; &#xBC29;&#xC2DD;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.<br>-<em>learning rate: &#xD55C; &#xBC88; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xC5D0; &#xC5BC;&#xB9CC;&#xD07C; &#xAC00;&#xC911;&#xCE58;&#xB97C; &#xC904; &#xAC83;&#xC778;&#xC9C0;&#xB97C; &#xACB0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</em><br>-<em>Optimizer&#xC758; &#xC885;&#xB958;&#xB9C8;&#xB2E4; &#xC124;&#xC815;&#xD560; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xC885;&#xB958;&#xAC00; &#xC11C;&#xB85C; &#xB2E4;&#xB985;&#xB2C8;&#xB2E4;.</em> </li>
+</ul>
+<p><br> </p>
+<p><img src="img/3-5/manual_3-5_1_5.png" alt=""></p>
+<blockquote>
+<p>&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xBD84;&#xB958; &#xC606;&#xC758; <code>i</code> &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xAC01; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xC124;&#xBA85;&#xACFC; docs&#xB85C; &#xC5F0;&#xACB0;&#xB418;&#xB294; &#xB9C1;&#xD06C;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_1_6.png" alt=""></p>
+<p>&#x2464; &#xC6B0;&#xCE21; &#xBA54;&#xB274;&#xC758; Early Stopping &#xD0ED;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xD559;&#xC2B5; &#xC2DC;&#xAC04;&#xC744; &#xB2E8;&#xCD95;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>Early Stopping &#xAE30;&#xB2A5;&#xC740; &#xB354;&#xC774;&#xC0C1; &#xC2E0;&#xACBD;&#xB9DD;&#xC758; &#xC131;&#xB2A5; &#xBCC0;&#xD654;&#xAC00; &#xC5C6;&#xC744; &#xB54C; &#xD559;&#xC2B5;&#xC744; &#xC885;&#xB8CC;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>Neural Network &#xBAA8;&#xB4C8;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &#xC6B0;&#xCE21; &#xBA54;&#xB274;&#xC758; Early Stopping &#xD0ED;&#xC744; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Early Stopping&#xC758; &#xAE30;&#xC900;&#xC774; &#xB418;&#xB294; Class&#xB97C; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Early Stopping&#xC758; &#xAE30;&#xC900;&#xC774; &#xB418;&#xB294; &#xC131;&#xB2A5; &#xCC99;&#xB3C4;&#xB97C; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Early Stopping&#xC758; &#xAE30;&#xC900;&#xC774; &#xB418;&#xB294; &#xC131;&#xB2A5; &#xBCC0;&#xD654;&#xC758; &#xC815;&#xB3C4;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.<br>-<em>Min delta: &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC120;&#xD0DD;&#xD55C; &#xC131;&#xB2A5;&#xC774; &#xC774; &#xAC12; &#xC774;&#xD558;&#xB85C; &#xBCC0;&#xD654;&#xD558;&#xBA74; &#xB354;&#xC774;&#xC0C1;&#xC758; &#xC131;&#xB2A5; &#xBCC0;&#xD654;&#xAC00; &#xC5C6;&#xB2E4;&#xACE0; &#xD310;&#xB2E8;&#xD569;&#xB2C8;&#xB2E4;.</em><br>-<em>Patience: &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC120;&#xD0DD;&#xD55C; &#xC131;&#xB2A5;&#xC774; &#xC774; &#xAC12;&#xC758; epoch &#xB3D9;&#xC548; &#xBCC0;&#xD654;&#xAC00; &#xC5C6;&#xC73C;&#xBA74; Early Stopping&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.</em></li>
+</ul>
+<p><br><br></p>
+<h3 id="2-auto-tuning">(2) Auto Tuning</h3>
+<p>&#xC2E0;&#xACBD;&#xB9DD;&#xC740; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xAC12;&#xC5D0; &#xB530;&#xB77C; &#xC131;&#xB2A5;&#xC5D0; &#xD070; &#xCC28;&#xC774;&#xAC00; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.<br>Auto Tuning&#xC740; &#xC720;&#xC804; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC8FC;&#xC5B4;&#xC9C4; &#xB370;&#xC774;&#xD130;&#xC14B;&#xACFC; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xAC00;&#xC7A5; &#xCD5C;&#xC801;&#xD654;&#xB41C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xD0D0;&#xC0C9;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.<br>&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xD559;&#xC2B5;&#xACFC; &#xAD00;&#xB828;&#xB41C; &#xD558;&#xC774;&#xD37C;&#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB4E4;&#xC744; &#xBC14;&#xAFD4;&#xAC00;&#xBA74;&#xC11C; &#xC2E4;&#xD5D8;&#xC744; &#xD558;&#xC9C0; &#xC54A;&#xC544;&#xB3C4;, &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC774; &#xC2E4;&#xD5D8;&#xC744; &#xD1B5;&#xD574;&#xC11C; &#xC131;&#xB2A5;&#xC744; &#xAC1C;&#xC120;&#xC2DC;&#xD0A4;&#xB294; &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xD0D0;&#xC0C9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_2_1.png" alt="" width="30%"></p>
+
+<p>&#x2460; Flow workspace&#xC5D0; &#xCD94;&#xAC00;&#xD55C; Neural Network &#xBAA8;&#xB4C8;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &#xBAA8;&#xB4C8; &#xC704;&#xC758; &#xB3CB;&#xBCF4;&#xAE30; &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_2_2.png" alt=""></p>
+
+<p>&#x2461; &#xC124;&#xC815; &#xCC3D;&#xC5D0;&#xC11C; &#xCD5C;&#xC801;&#xD654;&#xB97C; &#xC218;&#xD589;&#xD558;&#xACE0; &#xC2F6;&#xC740; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758; &#xCCB4;&#xD06C;&#xBC15;&#xC2A4;&#xB97C; &#xCCB4;&#xD06C;&#xD569;&#xB2C8;&#xB2E4;. &#xCCB4;&#xD06C;&#xAC00; &#xB418;&#xC9C0; &#xC54A;&#xC740; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB294; &#xCD5C;&#xC801;&#xD654;&#xB97C; &#xC218;&#xD589;&#xD558;&#xC9C0; &#xC54A;&#xACE0;, &#xD574;&#xB2F9; &#xAC12;&#xC73C;&#xB85C; &#xD559;&#xC2B5;&#xC744; &#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xC704; &#xADF8;&#xB9BC;&#xC758; &#xACBD;&#xC6B0; epoch&#xC740; 50&#xC73C;&#xB85C; &#xACE0;&#xC815;&#xD558;&#xACE0;, batch size, learning rate decary, optimzier&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xD559;&#xC2B5; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xD0D0;&#xC0C9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_2_3.png" alt=""></p>
+
+<p>&#x2462; &#xC131;&#xB2A5;&#xC744; &#xAC1C;&#xC120;&#xD558;&#xACE0; &#xC2F6;&#xC740; &#xC9C0;&#xD45C;&#xB97C; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC740; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC120;&#xD0DD;&#xD55C; &#xC810;&#xC218;&#xB97C; &#xAC1C;&#xC120;&#xD558;&#xB294; &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xD0D0;&#xC0C9;&#xD569;&#xB2C8;&#xB2E4;. &#xC704; &#xADF8;&#xB9BC;&#xC758; &#xACBD;&#xC6B0; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC740; validation accuracy&#xB97C; &#xAC1C;&#xC120;&#xD558;&#xB294; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_2_4.png" alt=""></p>
+<p>&#x2463; Neural Network &#xBAA8;&#xB4C8;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &#xD558;&#xB2E8;&#xC758; Auto Tunning &#xD0ED;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74;, &#xC131;&#xB2A5;&#xC774; &#xAC1C;&#xC120;&#xB418;&#xACE0; &#xC788;&#xB294;&#xC9C0; &#xADF8;&#xB798;&#xD504;&#xB97C; &#xD1B5;&#xD574; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_2_4.png" alt=""></p>
+<p>&#x2464; Auto Tunning &#xD0ED;&#xC5D0;&#xC11C; Table &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74;, &#xAC01; &#xC9C0;&#xD45C;&#xBCC4;&#xB85C; &#xC0C1;&#xC704; 5&#xAC1C;&#xC758; &#xC131;&#xB2A5;&#xC744; &#xB0B4;&#xB294; &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC870;&#xD569;&#xC744; &#xD655;&#xC778;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC606;&#xC758; Apply &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; &#xD574;&#xB2F9; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xC801;&#xC6A9;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br><br></p>
+<h3 id="3-custom-neural-network-&#xBAA8;&#xB4C8;-&#xC81C;&#xC791;&#xD558;&#xAE30;">(3) Custom Neural Network &#xBAA8;&#xB4C8; &#xC81C;&#xC791;&#xD558;&#xAE30;</h3>
+<p>DEEP:PHI&#xC5D0;&#xC11C; &#xAE30;&#xBCF8;&#xC73C;&#xB85C; &#xC81C;&#xACF5;&#xD558;&#xB294; Neural Network &#xBAA8;&#xB4C8; &#xC678;&#xC5D0;&#xB3C4;, &#xC218;&#xB9CE;&#xC740; &#xC885;&#xB958;&#xC758; &#xC2E0;&#xACBD;&#xB9DD;&#xC774; &#xC874;&#xC7AC;&#xD558;&#xACE0; &#xC0C8;&#xB86D;&#xAC8C; &#xBC1C;&#xD45C;&#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC0C8;&#xB85C;&#xC6B4; &#xAD6C;&#xC870;&#xC758; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xC9C1;&#xC811; &#xB9CC;&#xB4E4;&#xACE0; &#xC2F6;&#xC740; &#xACBD;&#xC6B0; Custom Neural Network &#xBAA8;&#xB4C8;&#xC744; &#xC81C;&#xC791;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="img/3-5/manual_3-5_3.png" alt="create neural network module" width="40%"></p>
+<p>Neural Network &#xBAA8;&#xB4C8; &#xD0ED; &#xD558;&#xB2E8;&#xC758; <span style="color:red">+Create</span> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; Image Processing &#xBAA8;&#xB4C8; &#xC0DD;&#xC131; &#xB9C8;&#xBC95;&#xC0AC;&#xAC00; &#xD31D;&#xC5C5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBAA8;&#xB4C8; &#xC0DD;&#xC131; &#xB2E8;&#xACC4;&#xB294; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;. (*&#xD45C;&#xC2DC;&#xB294; &#xD544;&#xC218; &#xC785;&#xB825; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.)</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_3_1.png" alt="&#xC2E0;&#xACBD;&#xB9DD; &#xC0DD;&#xC131; process-1" width="50%"></p>
+
+<p>&#x2460; &#xBAA8;&#xB4C8;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xAE30; &#xC804; &#xD29C;&#xD1A0;&#xB9AC;&#xC5BC; &#xC601;&#xC0C1;&#xC744; &#xD655;&#xC778;&#xD558;&#xBA74; &#xBAA8;&#xB4C8; &#xC0DD;&#xC131; &#xACFC;&#xC815;&#xC5D0; &#xB9CE;&#xC740; &#xB3C4;&#xC6C0;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_3_2.png" alt="&#xC2E0;&#xACBD;&#xB9DD; &#xC0DD;&#xC131; process-2" width="50%"></p>
+
+<p>&#x2461; &#xC2E0;&#xACBD;&#xB9DD;&#xC758; &#xC774;&#xB984;, &#xBD84;&#xB958; &#xCE74;&#xD14C;&#xACE0;&#xB9AC;, &#xC694;&#xC57D; &#xB4F1; &#xD544;&#xC694;&#xD55C; &#xC815;&#xBCF4;&#xB4E4;&#xC744; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_3_3.png" alt="&#xC2E0;&#xACBD;&#xB9DD; &#xC0DD;&#xC131; process-3" width="70%"></p>
+
+<p>&#x2462; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xB300;&#xD55C; &#xC0C1;&#xC138;&#xC815;&#xBCF4;&#xB97C; &#xC785;&#xB825;&#xD558;&#xACE0; Next &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; &#xBAA8;&#xB4C8; &#xB0B4;&#xBD80;&#xB97C; &#xD3B8;&#xC9D1;&#xD560; &#xC218; &#xC788;&#xB294; &#xC2E0;&#xACBD;&#xB9DD; &#xBAA8;&#xB378; &#xBE4C;&#xB354;&#xAC00; &#xD31D;&#xC5C5;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_3_4.png" alt="&#xC2E0;&#xACBD;&#xB9DD; &#xBAA8;&#xB378; &#xBE4C;&#xB354;"></p>
+<p>&#x2463; &#xC2E0;&#xACBD;&#xB9DD; &#xBAA8;&#xB378; &#xBE4C;&#xB354;&#xB294; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xB0B4;&#xBD80;&#xC640; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; <span style="color:blue">&#xC88C;&#xCE21;</span>&#xC5D0;&#xB294; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xAD6C;&#xC131;&#xD558;&#xB294; Layer&#xC758; &#xBAA9;&#xB85D;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBA70; <span style="color:red">&#xC911;&#xC559; &#xC601;&#xC5ED;</span>&#xC740; Flow workspace&#xB85C; &#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xD30C;&#xC774;&#xD504;&#xB77C;&#xC778; &#xAD6C;&#xCD95;&#xACFC; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xC88C;&#xCE21; &#xBA54;&#xB274;&#xC5D0;&#xC11C; &#xD544;&#xC694;&#xD55C; Layer&#xC744; &#xB4DC;&#xB798;&#xADF8;&amp;&#xB4DC;&#xB86D;&#xD558;&#xACE0; &#xB2E4;&#xB978; Layer&#xACFC; &#xC5F0;&#xACB0;&#xD558;&#xC5EC; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xAD6C;&#xC131;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_3_5.png" alt="layer &#xCE74;&#xD14C;&#xACE0;&#xB9AC; 8&#xAC1C;"></p>
+<p>&#x2464; Layer&#xC740; &#xCD1D; 8&#xAC1C; &#xCE74;&#xD14C;&#xACE0;&#xB9AC;&#xB85C; &#xAD6C;&#xBD84;&#xB418;&#xC5B4; &#xC788;&#xC73C;&#xBA70;, <span style="color:red">keras &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;</span>&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xB3D9;&#xC791;&#xD569;&#xB2C8;&#xB2E4;. &#xAC01; &#xCE74;&#xD14C;&#xACE0;&#xB9AC;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>Core Layer: <code>Resize</code>, <code>Flatten</code>, <code>Activation</code> &#xB4F1; &#xAE30;&#xBCF8; &#xD575;&#xC2EC; Layer&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Convolution Layer: <code>Conv2D</code> &#xB4F1; Convolution &#xC5F0;&#xC0B0;&#xC744; &#xC218;&#xD589;&#xD558;&#xB294; Layer&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Pooling Layer: <code>AveragePooling</code>, <code>MaxPooling</code> &#xB4F1; &#xB2E4;&#xC591;&#xD55C; Pooling Layer&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Merge Layer: <code>Add</code>, <code>Concatenate</code> &#xB4F1; &#xB450; &#xAC1C; &#xC774;&#xC0C1;&#xC758; Tensor&#xC744; &#xD569;&#xCE58;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xC218;&#xD589;&#xD558;&#xB294; Layer&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Normalization Layer: <code>BatchNormalization</code> &#xB4F1; &#xC815;&#xADDC;&#xD654;&#xB97C; &#xC218;&#xD589;&#xD558;&#xB294; Layer&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Loss Layer: <code>FocalLoss</code>, <code>CrossEntropy</code> &#xB4F1;&#xC758; &#xB2E4;&#xC591;&#xD55C; Loss Layer&#xB4E4;&#xC744; &#xD3EC;&#xD568;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Block Layer: &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC5EC;&#xB7EC; Layer&#xB4E4;&#xC758; &#xBB36;&#xC74C;&#xC73C;&#xB85C; &#xC815;&#xC758;&#xD55C; Block Layer&#xB4E4;&#xC744; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+<li>Input Layer: &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xC785;&#xB825;&#xC73C;&#xB85C; &#xB4E4;&#xC5B4;&#xC624;&#xB294; &#xB370;&#xC774;&#xD130;&#xC758; Image, Label&#xB4E4;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p><br></p>
+<p align="center"><img src="img/3-5/manual_3-5_3_6.png" alt="layer &#xC5F0;&#xACB0; &#xC608;&#xC2DC;" width="18%"></p>
+
+<p>&#x2465; &#xC88C;&#xCE21;&#xC758; Layer &#xBAA9;&#xB85D;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294; Layer &#xC744; &#xB4DC;&#xB798;&#xADF8;&#xD558;&#xC5EC; &#xBC30;&#xCE58;&#xD55C; &#xD6C4;, &#xC21C;&#xC11C;&#xC5D0; &#xB9DE;&#xAC8C; &#xC5F0;&#xACB0;&#xD574;&#xC8FC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.<br>&#xAC00;&#xC7A5; &#xCC98;&#xC74C;&#xC758; Layer&#xC740; Input Layer &#xC758; <code>Image</code> Layer&#xAC00; &#xB418;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.<br><code>Image</code> Layer&#xC740; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0; &#xC785;&#xB825;&#xC73C;&#xB85C; &#xC5F0;&#xACB0;&#xB41C; &#xB370;&#xC774;&#xD130;&#xC14B;&#xC744; &#xBC1B;&#xC544;&#xC624;&#xB294; &#xC5ED;&#xD560;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. <code>Image</code> Layer&#xC758; &#xB4A4;&#xC5D0; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xAD6C;&#xC131;&#xD558;&#xB294; Layer &#xB4E4;&#xC744; &#xBC30;&#xCE58;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_3_7.png" alt="layer &#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815;"></p>
+<p>&#x2466; Layer&#xC744; &#xC6D0;&#xD558;&#xB294; &#xC21C;&#xC11C;&#xC5D0; &#xB530;&#xB77C; &#xBC30;&#xCE58;&#xD55C; &#xD6C4;, &#xC6B0;&#xCE21; &#xBA54;&#xB274;&#xC758; <span style="color:red">Layer Parameter &#xD0ED;</span>&#xC5D0;&#xC11C; Layer&#xC758; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xC608;&#xB97C; &#xB4E4;&#xC5B4;, Convolution Layer&#xC758; &#xACBD;&#xC6B0; filter &#xC218;, kernel size &#xB4F1;&#xC744; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/manual_3-5_3_8.png" alt="Block layer &#xC0DD;&#xC131; process"></p>
+<p>&#x2467; &#xBC18;&#xBCF5;&#xB418;&#xB294; Layer&#xB4E4;&#xC740; Block &#xB2E8;&#xC704;&#xB85C; &#xBB36;&#xC5B4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xC88C;&#xCE21; &#xC0C1;&#xB2E8;&#xC758; New Block&#xC744; &#xB204;&#xB974;&#xBA74; Block&#xC774; &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;. &#xC0DD;&#xC131;&#xB41C; Block Layer &#xC704;&#xC758; &#xB3CB;&#xBCF4;&#xAE30; &#xBC84;&#xD2BC;&#xC744; &#xB20C;&#xB7EC; Block &#xB0B4;&#xBD80;&#xB85C; &#xC9C4;&#xC785;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>Block &#xB0B4;&#xBD80;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294; &#xC21C;&#xC11C;&#xB300;&#xB85C; Layer&#xC744; &#xBC30;&#xCE58;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p><br><br></p>
+<h3 id="4-custom-layer-&#xC0DD;&#xC131;&#xD558;&#xAE30;">(4) Custom Layer &#xC0DD;&#xC131;&#xD558;&#xAE30;</h3>
+<!-- 기존 내용 그대로 사용 -->
+<p>&#xAE30;&#xC874;&#xC5D0; &#xC81C;&#xACF5;&#xD558;&#xB294; Layer &#xC774;&#xC678;&#xC5D0; &#xCD94;&#xAC00;&#xB85C; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC0C8;&#xB86D;&#xAC8C; &#xC0DD;&#xC131;&#xD558;&#xAC70;&#xB098; &#xAE30;&#xC874; Layer&#xC758; &#xD3B8;&#xC9D1;&#xC744; &#xD1B5;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC6D0;&#xD558;&#xB294; Custom &#xC2E0;&#xACBD;&#xB9DD; Layer&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="img/3-5/layer/layer_create_1.png" alt=""></p>
+<p>&#x2460; Layer &#xD0ED;&#xC5D0;&#xC11C; &#xB9CC;&#xB4E4;&#xACE0;&#xC790; &#xD558;&#xB294; Layer&#xC758; &#xCE74;&#xD14C;&#xACE0;&#xB9AC;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xACE0; &#xD558;&#xB2E8;&#xC758; <code>+Create</code> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC5EC; Layer &#xC0DD;&#xC131; &#xB9C8;&#xBC95;&#xC0AC;&#xB85C; &#xC9C4;&#xC785;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/layer/layer_create_2.png" alt=""></p>
+<p>&#x2461; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB9CC;&#xB4E4;&#xACE0;&#xC790; &#xD558;&#xB294; Layer&#xC758; &#xC774;&#xB984;&#xACFC; &#xC124;&#xBA85;&#xC744; &#xC791;&#xC131;&#xD558;&#xACE0; <code>Save</code> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/layer/enter_layer_source_code_1.png" alt=""></p>
+<p>&#x2462; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xB9CC;&#xB4E0; Layer&#xAC00; &#xC88C;&#xCE21;&#xC758; &#xBAA9;&#xB85D;&#xC5D0; <code>My</code>&#xB77C;&#xB294; &#xD45C;&#xC2DC;&#xC640; &#xD568;&#xAED8; &#xC870;&#xD68C;&#xB418;&#xACE0; &#xD574;&#xB2F9; Layer&#xB97C; &#xC120;&#xD0DD;&#xD55C; &#xD6C4; &#xCF54;&#xB4DC; &#xC544;&#xC774;&#xCF58; <code>&lt;/&gt;</code>&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xD3B8;&#xC9D1; &#xCC3D;&#xC73C;&#xB85C; &#xC9C4;&#xC785;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/layer/layer_source_code_save_1.png" alt="&#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xD3B8;&#xC9D1;"></p>
+<p>&#x2463; Layer&#xC758; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xACE0; &#xC800;&#xC7A5; &#xBC84;&#xD2BC;&#xC744; &#xB20C;&#xB7EC; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-5/layer/layer_parameter_2.png" alt="&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xD0ED;"><br><em>&lt;&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xD0ED;&gt;</em></p>
+<p><img src="img/3-5/layer/layer_parameter_1.png" alt="&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815;"><br><em>&lt;&#xD30C;&#xB77C;&#xBBF8;&#xD130; &#xC124;&#xC815;&gt;</em></p>
+<p>&#x2464; &#xC6B0;&#xCE21;&#xC758; Layer Parameter &#xD0ED;&#xC5D0;&#xC11C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xACE0; &#xC124;&#xC815;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br><br></p>
+<h3 id="5-neural-network-&#xBAA8;&#xB4C8;-&#xD3B8;&#xC9D1;&#xD558;&#xAE30;">(5) Neural Network &#xBAA8;&#xB4C8; &#xD3B8;&#xC9D1;&#xD558;&#xAE30;</h3>
+<!-- 3-3-3과 동일 -->
+<p>&#xBAA8;&#xB4C8; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0; &#xC788;&#xB294; &#xBAA8;&#xB4C8;&#xC774;&#xB098;, Flow workspace&#xC5D0; &#xCD94;&#xAC00;&#xD55C; &#xBAA8;&#xB4C8;&#xC744; &#xD3B8;&#xC9D1;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.  </p>
+<p>&#xAC19;&#xC740; &#xC885;&#xB958;&#xC758; &#xC2E0;&#xACBD;&#xB9DD;&#xC774;&#xB77C;&#xB3C4; &#xAE4A;&#xC774;&#xC640; &#xAD6C;&#xC870;&#xB97C; &#xC870;&#xC815;&#xD558;&#xBA74; &#xC131;&#xB2A5;&#xC774; &#xB2EC;&#xB77C;&#xC9C8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD639;&#xC740; &#xC2E0;&#xACBD;&#xB9DD;&#xC744; &#xAD6C;&#xC131;&#xD558;&#xB294; &#xAC01; layer&#xC758; activation function&#xC774;&#xB098; initializer(&#xCD08;&#xAE30;&#xD654;)&#xB97C; &#xC218;&#xC815;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xC131;&#xB2A5;&#xC744; &#xAC1C;&#xC120;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xAE30;&#xC874;&#xC5D0; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xC2E0;&#xACBD;&#xB9DD;&#xC5D0;&#xC11C; &#xAD6C;&#xC870;&#xB97C; &#xC57D;&#xAC04;&#xB9CC; &#xBCC0;&#xD615;&#xD558;&#xC5EC; &#xC6D0;&#xD558;&#xB294; &#xAD6C;&#xC870;&#xC758; &#xC2E0;&#xACBD;&#xB9DD;&#xC73C;&#xB85C; &#xB9CC;&#xB4E4;&#xACE0; &#xC2F6;&#xC740; &#xACBD;&#xC6B0;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><br></p>
+<p><img src="img/3-3/manual_3-3_3_1.png" alt=""></p>
+<ul>
+<li>&#xBAA8;&#xB4C8; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0;&#xC11C; &#xBAA8;&#xB4C8; &#xC774;&#xB984; &#xC6B0;&#xCE21;&#xC5D0; &#xC788;&#xB294; &#xCF54;&#xB4DC; &#xC544;&#xC774;&#xCF58; <code>&lt;/&gt;</code>&#xC744; &#xD074;&#xB9AD;&#xD558;&#xAC70;&#xB098;, &#xC6B0;&#xCE21; &#xBA54;&#xB274; Information &#xD0ED; &#xD558;&#xB2E8;&#xC758; <code>&lt;/&gt;View Code</code> &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xD574;&#xB2F9; &#xBAA8;&#xB4C8;&#xC758; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xD3B8;&#xC9D1;&#xCC3D;&#xC73C;&#xB85C; &#xC9C4;&#xC785;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xB2E8;, &#xAE30;&#xBCF8; &#xBAA8;&#xB4C8;&#xC758; &#xACBD;&#xC6B0; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xB97C; &#xD3B8;&#xC9D1;&#xD560; &#xC218; &#xC5C6;&#xACE0;, &#xC9C1;&#xC811; &#xC0DD;&#xC131;&#xD55C; Custom &#xBAA8;&#xB4C8;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xC815;&#xD558;&#xACE0; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p><br></p>
+<p align="center"><img src="img/3-3/manual_3-3_3_2.png" alt=""></p>
+
+<ul>
+<li>&#xAE30;&#xBCF8; &#xBAA8;&#xB4C8;&#xC744; &#xD3B8;&#xC9D1;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; Flow workspace&#xC5D0; &#xBAA8;&#xB4C8;&#xC744; &#xCD94;&#xAC00;&#xD55C; &#xD6C4; &#xC218;&#xC815;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>Flow workspace&#xC5D0; &#xC788;&#xB294; &#xBAA8;&#xB4C8;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xACE0; &#xBAA8;&#xB4C8; &#xC704;&#xC758; &#xCF54;&#xB4DC; &#xC544;&#xC774;&#xCF58; <code>&lt;/&gt;</code>&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; &#xC18C;&#xC2A4;&#xCF54;&#xB4DC; &#xD3B8;&#xC9D1;&#xCC3D;&#xC73C;&#xB85C; &#xC9C4;&#xC785;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xC18C;&#xC2A4;&#xCF54;&#xB4DC;&#xB97C; &#xC218;&#xC815;&#xD558;&#xACE0; &#xC800;&#xC7A5;&#xD558;&#xBA74; Flow workspace&#xC5D0; &#xC788;&#xB294; &#xD574;&#xB2F9; &#xBAA8;&#xB4C8;&#xC5D0;&#xB9CC; &#xC218;&#xC815;&#xC0AC;&#xD56D;&#xC774; &#xBC18;&#xC601;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li>&#xCF54;&#xB4DC; &#xC544;&#xC774;&#xCF58; &#xC67C;&#xCABD;&#xC758; <span style="color:red">&#xC800;&#xC7A5; &#xC544;&#xC774;&#xCF58;</span>&#xC744; &#xB204;&#xB974;&#xBA74; &#xC218;&#xC815;&#xD55C; &#xBAA8;&#xB4C8;&#xC744; &#xBAA8;&#xB4C8; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0; &#xC800;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p align="center"><img src="img/3-3/manual_3-3_3_3.png" alt="" width="60%"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3-4.Data_Manipulation_모듈.html" class="navigation navigation-prev " aria-label="Previous page: 3-4. Data Manipulation 모듈">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3-6.프로젝트_실행하기.md" class="navigation navigation-next " aria-label="Next page: 3-5. 프로젝트 실행하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3-4. Neural Network 모듈","level":"1.4.5","depth":2,"next":{"title":"3-5. 프로젝트 실행하기","level":"1.4.6","depth":2,"path":"chapter3/3-6.프로젝트_실행하기.md","ref":"chapter3/3-6.프로젝트_실행하기.md","articles":[]},"previous":{"title":"3-4. Data Manipulation 모듈","level":"1.4.4","depth":2,"path":"chapter3/3-4.Data_Manipulation_모듈.md","ref":"chapter3/3-4.Data_Manipulation_모듈.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/3-5.Neural_Network_모듈.md","mtime":"2021-02-09T12:37:22.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-09T12:44:56.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
