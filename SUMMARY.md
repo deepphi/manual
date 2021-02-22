@@ -12,7 +12,7 @@
   - [3-2. Dataset 모듈](chapter3/3-2.Dataset_모듈.md)
   - [3-3. Image Processing 모듈](chapter3/3-3.Image_Processing_모듈.md)
   - [3-4. Data Manipulation 모듈](chapter3/3-4.Data_Manipulation_모듈.md)
-  - [3-5. Neural Network 모듈ㄷ](chapter3/3-5.Neural_Network_모듈.md)
+  - [3-5. Neural Network 모듈](chapter3/3-5.Neural_Network_모듈.md)
   - [3-6. 프로젝트 실행하기](chapter3/3-6.프로젝트_실행하기.md)
   - [3-7. 테스트 프로젝트 전환](chapter3/3-7.테스트_프로젝트_전환.md)
   - [3-8. 부가 기능](chapter3/3-8.부가_기능.md)
